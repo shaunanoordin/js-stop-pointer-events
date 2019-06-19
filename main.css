@@ -12,7 +12,7 @@ html, body {
 }
 
 main {
-  min-height: 100rem;
+  min-height: 200vh;
   background: #444;
   overflow: auto;
 }
