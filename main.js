@@ -4,8 +4,11 @@ class App {
     this.canvas = document.getElementById('canvas');
     this.canvas2d = this.canvas.getContext('2d');
     this.canvas.addEventListener('pointerdown', this.handleEvent.bind(this));
+    //this.canvas.addEventListener('pointermove', this.handleEvent.bind(this));
     this.canvas.addEventListener('pointerup', this.handleEvent.bind(this));
-    // this.canvas.addEventListener('pointermove', this.handleEvent.bind(this));
+    this.canvas.addEventListener('touchstart', this.handleEvent.bind(this));
+    this.canvas.addEventListener('touchmove', this.handleEvent.bind(this));
+    this.canvas.addEventListener('touchend', this.handleEvent.bind(this));
   }
   
   handleEvent (e) {
